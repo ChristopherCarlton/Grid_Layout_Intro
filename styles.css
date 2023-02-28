@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header {
+  background: hsl(30deg, 80%, 80%);
+  color: hsl(30deg, 80%, 40%);
+}
+
+article {
+  background: hsl(0deg, 80%, 80%);
+  color: hsl(0deg, 80%, 40%);
+}
+.editorial {
+  background: hsl(75deg, 80%, 60%);
+  color: hsl(75deg, 80%, 40%);
+}
+.brief {
+  background: hsl(200deg, 80%, 60%);
+  color: hsl(200deg, 80%, 40%);
+}
+.top {
+  background: hsl(160deg, 40%, 60%);
+  color: hsl(160deg, 40%, 40%);
+}
+footer {
+  background: hsl(30deg, 10%, 60%);
+  color: hsl(30deg, 10%, 10%);
+}
+.copyright {
+  background: hsl(270deg, 80%, 60%);
+  color: hsl(270deg, 80%, 40%);
+}
+
+.grid > * {
+  padding: 10px;
+}

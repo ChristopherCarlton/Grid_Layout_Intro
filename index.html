@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      /* CSS Grid */
+      .grid {
+        display: grid;
+        /* each string is  row,
+        each space separated word in the row
+        is a cell/column */
+        grid-template-areas:
+          "head head head head"
+          ". brief brief ."
+          ". featured featured ."
+          ". other stories ."
+          "foot foot foot foot"
+          ". copy copy .";
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        grid-template-rows: 4em 1fr 1fr 1fr 6em 2em;
+      }
+
+      .header {
+        /* starts here ends here
+        -1 is the end of an array so
+        if we add more stuff it won't
+        mess up with the insexes */
+        /* grid-column: 1 / -1; */
+
+        grid-area: head;
+      }
+
+      .featured {
+        /* goes from second column to  */
+        /* grid-column: 2 / -2; */
+
+        grid-area: featured;
+        min-height: 500px;
+      }
+
+      .brief {
+        grid-area: brief;
+      }
+
+      .editorial {
+        grid-area: other;
+      }
+
+      .top {
+        grid-area: stories;
+      }
+
+      .footer {
+        grid-area: foot;
+      }
+
+      .copyright {
+        grid-area: copy;
+      }
+    </style>
+  </head>
+  <body class="grid">
+    <header class="header">
+      Header
+    </header>
+    <article class="featured">Featured Article</article>
+    <div class="editorial">Other Articles</div>
+    <div class="brief">The World in Brief</div>
+    <div class="top">Top Stories</div>
+    <footer class="footer">Big Footer</footer>
+    <div class="copyright">Copyright</div>
+  </body>
+</html>
